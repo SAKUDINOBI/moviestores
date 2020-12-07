@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :addresses
+  resources :packages
+  resources :customers
+  resources :movies
   get 'welcome/index'
 
   devise_for :users
